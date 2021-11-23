@@ -13,17 +13,22 @@
     </head>
 
     <body>
-            <img src="./images/noise.png">
         <header>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu">
+                <div class="menu__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div class="nav">
                 <div class="logocontainer">
                     <a href="#home">
-                    <img src="./images/TP.png" style="height: 5%;"> 
+                    <img src="./images/TP.png" style="height: 5%;" class="img-fluid"> 
                     </a>
                 </div>
                 <div class="wrapper">
@@ -38,29 +43,81 @@
 
                     <div class="social">
                         <ul class="socialicons">
-                            <li>
-                                <a href="https://instagram.com/tomiqe.machacek" target="_blank"> 
-                                    <img src="./images/Instagram.png" alt="Instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/tomiqe_graphic" target="_blank"> 
-                                    <img src="./images/Twitter.png" alt="Twitter">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://behance.net/tomiqe_production" target="_blank"> 
-                                    <img src="./images/Behance.png" alt="Behance">
-                                </a>
-                            </li>
+                        <li>
+                            <a href="https://instagram.com/tomiqe.machacek" target="_blank"> 
+                                <img src="./images/Instagram.png" alt="Instagram" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/tomiqe_graphic" target="_blank"> 
+                                <img src="./images/Twitter.png" alt="Twitter" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://behance.net/tomiqe_production" target="_blank"> 
+                                <img src="./images/Behance.png" alt="Behance" class="img-fluid">
+                            </a>
+                        </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
+            <div class="sidepanel sidepanel--active" draggable="false">
+                <div class="sidepanel__inside">
+                    <ul class="sidepanel__list sidepanel__list--menu">
+                        <li class="sidepanel__item">
+                            <a href="#home" class="sidepanel__link">
+                                <div class="sidepanel__text">Home</div>
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="#work" class="sidepanel__link">
+                                <div class="sidepanel__text">Work</div>
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="#about-me" class="sidepanel__link">
+                                <div class="sidepanel__text">About me</div>
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="#services" class="sidepanel__link">
+                                <div class="sidepanel__text">Services</div>
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="#reviews" class="sidepanel__link">
+                                <div class="sidepanel__text">Reviews</div>
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="#contact" class="sidepanel__link">
+                                <div class="sidepanel__text">Contact</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sidepanel__list sidepanel__list--social mb-3 mb-md-5">
+                        <li class="sidepanel__item">
+                            <a href="" class="sidepanel__link">
+                                <img src="./images/Instagram.png" alt="Instagram" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="" class="sidepanel__link">
+                                <img src="./images/Twitter.png" alt="Twitter" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="sidepanel__item">
+                            <a href="" class="sidepanel__link">
+                                <img src="./images/Behance.png" alt="Behance" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
         <main>
-            <div class="noise">
             <div class="maincontainer" id="home">
 
                 <div class="textcontainer">
@@ -84,7 +141,7 @@
                             </p>  
                     </div>
                     <a class="btn1" href="#work">
-                        <img src="./images/arrow.png">
+                        <img src="./images/arrow.png" class="img-fluid">
                             EXPLORE MY WORK  
                     </a>            
             </div>
@@ -165,7 +222,7 @@
         <div class="servicescontainer1">
 
             <div class="branding" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/brand-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/brand-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000"> Brand Identity </h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -176,7 +233,7 @@
             </div> 
 
             <div class="webdesign" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/desktop-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/desktop-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000"> Web Design </h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -187,7 +244,7 @@
             </div>
 
             <div class="socialmedia" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/socials.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/socials.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000"> Social Media </h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -202,7 +259,7 @@
         <div class="servicescontainer2" data-aos="fade-up" data-aos-duration="1000">
 
             <div class="logodesign">
-                <img src="./images/logod.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/logod.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000">Logo Design</h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -213,7 +270,7 @@
             </div>
 
             <div class="print" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/printer-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/printer-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000">Print Material</h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -224,7 +281,7 @@
             </div>
 
             <div class="photo" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./images/digital-photography-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/digital-photography-pngrepo-com.png" data-aos="fade-up" data-aos-duration="1000" class="img-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="1000">Photography</h2>
                 <p data-aos="fade-up" data-aos-duration="1000"> Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
@@ -237,9 +294,9 @@
 
         <div class="testimonialcontainer" id="review">
 
-            <img src="./images/apostrof.png" class="apostrof" data-aos="fade-up" data-aos-duration="800">
+            <img src="./images/apostrof.png" class="apostrof img-fluid" data-aos="fade-up" data-aos-duration="800">
 
-            <img src="./images/BibkaPhoto.png" class="fotka" data-aos="fade-up" data-aos-duration="1200">
+            <img src="./images/BibkaPhoto.png" class="fotka img-fluid" data-aos="fade-up" data-aos-duration="1200">
 
             <div class="reviewtextcontainer">
 
@@ -256,7 +313,7 @@
         </div>
 
         <div class="contact-container" id="contact">
-            <img src="./images/contact-image.png" class="contact-image">
+            <img src="./images/contact-image.png" class="contact-image" class="img-fluid">
             <div class="contact_form">
                 <h1 data-aos="fade-up" data-aos-duration="800">Hire me</h1>
                 <form>
@@ -273,7 +330,6 @@
                     <button class="submit">Submit</button>
             </div>
         </div>
-        </div>
         <footer>
             <div class="footer">
                 
@@ -283,8 +339,6 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
-        <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
     </body>
 </html>
