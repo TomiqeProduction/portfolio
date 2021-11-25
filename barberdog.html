@@ -7,16 +7,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="shortcut icon" type="image/png" href="./favicon.png">
-        <title>Barber Dog | Tomiqe Production</title>
+        <title>Barber Dog - Tomiqe Production</title>
     </head>
     <body>
          <header>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu">
+                <div class="menu__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div class="nav">
                 <div class="logocontainer">
                     <a href="#home">
@@ -25,12 +32,12 @@
                 </div>
                 <div class="wrapper">
                     <ul class="navtext">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#about-me">About me</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#review">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="index.html#about-me">About me</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#review">Reviews</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
 
                     <div class="social">
@@ -55,7 +62,59 @@
                 </div>
             </div>
         </header>
-
+        <div class="sidepanel sidepanel--active" draggable="false">
+            <div class="sidepanel__inside">
+                <ul class="sidepanel__list sidepanel__list--menu">
+                    <li class="sidepanel__item">
+                        <a href="#home" class="sidepanel__link">
+                            <div class="sidepanel__text">Home</div>
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="#work" class="sidepanel__link">
+                            <div class="sidepanel__text">Work</div>
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="#about-me" class="sidepanel__link">
+                            <div class="sidepanel__text">About me</div>
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="#services" class="sidepanel__link">
+                            <div class="sidepanel__text">Services</div>
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="#reviews" class="sidepanel__link">
+                            <div class="sidepanel__text">Reviews</div>
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="#contact" class="sidepanel__link">
+                            <div class="sidepanel__text">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidepanel__list sidepanel__list--social mb-3 mb-md-5">
+                    <li class="sidepanel__item">
+                        <a href="" class="sidepanel__link">
+                            <img src="./images/Instagram.png" alt="Instagram" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="" class="sidepanel__link">
+                            <img src="./images/Twitter.png" alt="Twitter" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="sidepanel__item">
+                        <a href="" class="sidepanel__link">
+                            <img src="./images/Behance.png" alt="Behance" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <main>
             <div class="barberdog-container">
                 <div class="backbutton">
@@ -172,8 +231,8 @@
 
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-        AOS.init();
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <script>AOS.init();</script>
     </body>
     </html>
