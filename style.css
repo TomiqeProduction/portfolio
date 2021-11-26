@@ -78,7 +78,7 @@ html::-webkit-scrollbar-track {
     width: 100%;
     background-color: rgba(18, 22, 53, 0.8);
     height: 80px; 
-    z-index: 6;
+    z-index: 999;
     opacity: 1;
     transition: all 0.5s ease;
     transform: translateY(0px);
@@ -304,28 +304,6 @@ html::-webkit-scrollbar-track {
 
 /* Main CSS */
 
-.glitch {
-animation: glitch 3s 3s ease-in-out infinite;
-}
-
-@keyframes glitch {
-1%{
-  transform: rotateX(50deg) skewX(140deg);
-}
-3%{
-  transform: rotateX(0deg) skewX(0deg);
-}
-} 
-
-@keyframes glitch2 {
-    15%{
-      transform: rotateX(15deg) skewX(-80deg);
-    }
-    1%{
-      transform: rotateX(0deg) skewX(0deg);
-    }
-    } 
-
 .maincontainer {
     display: flex;
     flex-flow: column;
@@ -383,7 +361,7 @@ animation: glitch 3s 3s ease-in-out infinite;
 .btn1 {
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 280px;
     height: 90px;
     border: 3px solid #2ecc71;
     background: none;
@@ -420,16 +398,6 @@ animation: glitch 3s 3s ease-in-out infinite;
     font-size: 38px;
 }
 
-.gfxcontain h3 {
-    display: flex;
-    flex-flow: row;
-    color: #fff;
-    width: fit-content;
-    font-family: 'Poppins', sans-serif;
-    font-weight:lighter;
-    font-size: 38px;
-}
-
 .gfxcontain p {
     display: flex;
     flex-flow: row;
@@ -457,7 +425,7 @@ animation: glitch 3s 3s ease-in-out infinite;
     margin-top: 120px;
 }
 .workbox1 {
-    width: 100%;
+    width: 1000px;
     height: auto;
     padding: 10px 20px;
 }
@@ -470,7 +438,7 @@ animation: glitch 3s 3s ease-in-out infinite;
     z-index: 3;
 }
 .workbox2 {
-    width: 100%;
+    width: 1000px;
     height: auto;
     padding: 10px 20px;
 }
@@ -653,7 +621,7 @@ animation: glitch 3s 3s ease-in-out infinite;
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: calc(100% - 20%);
     margin-left: 9.5%;
 }
@@ -948,7 +916,7 @@ animation: glitch 3s 3s ease-in-out infinite;
 .contact-image {
     width: 100%;
     height: 100%;
-    z-index: 8;
+    z-index: 1;
 }
 
 .contact_form {
@@ -959,7 +927,7 @@ animation: glitch 3s 3s ease-in-out infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 9;
+    z-index: 2;
 }
 
 form {
@@ -1074,11 +1042,12 @@ form {
     padding: 15px 45px;
     border:none;
     cursor: pointer;
-    transition:all .8s ease;
+    transition:all .4s ease;
 }
 
 .submit:hover {
     box-shadow: 0 1px 25px 0 #ab79f698 inset, 0 1px 25px 0 #ab79f6a8;
+    color: rgb(194, 233, 245);
 }
 
 .footer {
@@ -1121,44 +1090,52 @@ textarea::-webkit-scrollbar-track {
 li.ps:after {
     animation-name: ps;
 }
-li.ai:after {
-    animation-name: ai;
+li.fig:after {
+    animation-name: fig;
 }
-li.ae:after {
-    animation-name: ae;
+li.html:after {
+    animation-name: html;
 }
-li.pp:after {
-    animation-name: pp;
+li.css:after {
+    animation-name: css;
 }
-li.bl:after {
-    animation-name: bl;
+li.bs:after {
+    animation-name: bs;
+}
+li.php:after {
+    animation-name: php;
 }
 
 @keyframes ps {
     to {
-        width: 65%;
+        width: 90%;
     }
 }
 
-@keyframes ai {
+@keyframes fig {
     to {
         width: 55%;
     }
 }
-@keyframes ae {
+@keyframes html {
     to {
-        width: 60%;
+        width: 80%;
     }
 }
-@keyframes pp {
+@keyframes css {
     to {
-        width: 40%;
+        width: 75%;
     }
 }
-@keyframes bl {
+@keyframes bs {
     to {
-        width: 30%;
+        width: 70%;
     }
+}
+@keyframes php {
+        to {
+            width: 50%;
+        }
 }
 
 /* Barber Dog Project Subpage CSS */
@@ -1213,7 +1190,7 @@ li.bl:after {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin-left: 9%;
-    font-size: 110px;
+    font-size: 90px;
     color: #fff;
     margin-block-end: 0em;
     margin-block-start: 0em;
@@ -1223,7 +1200,7 @@ li.bl:after {
 .barberdogbox {
     display:flex;
     flex-flow: row;
-    width: 25%;
+    width: 450px;
     height: fit-content;
     margin-left: 9%;
 }
@@ -1244,11 +1221,11 @@ li.bl:after {
 }
 
 .image {
-    z-index: 12;
+    z-index: 1;
     position: absolute;
     top: 160px;
-    right: 5%;
-    opacity: 1;
+    width: 800px;
+    right: 0%;
 }
 
 .palette-container {
@@ -1383,6 +1360,19 @@ li.bl:after {
     font-weight:lighter;
     font-size: 16px;
 }
+.paw1 {
+    width: 70%;
+    z-index: 1;
+}
+.paw2 {
+    position: relative;
+     top: -5px;
+     display: none;
+}
+.row {
+    display: flex;
+    flex-flow: row;
+}
 
 .showcase {
     width: calc(100% - 18%);
@@ -1437,9 +1427,6 @@ li.bl:after {
 }
 
 @media (min-width:1200px) {
-    .image {
-        opacity: 0;
-    }
     .apostrof {
         display: flex;
     }
@@ -1449,9 +1436,32 @@ li.bl:after {
     }
 }
 
+
 @media (max-width:1200px) {
     .overflow-dekstop-hidden {
         overflow:auto
+    }
+    .maincontainer {
+        width: 100%;
+        position: inherit;
+    }
+    .textcontainer {
+        position: inherit;
+    }
+    .maingreen {
+        font-size: 72px;
+    }
+    .mainwhite {
+        font-size: 72px;
+    }
+    .gfxcontain h3 {
+        font-size: 18px;
+    }
+    .gfxcontain p  {
+        font-size: 18px;
+    }
+    .image {
+        display: none;
     }
     .review {
         margin: 20px auto;
@@ -1463,6 +1473,7 @@ li.bl:after {
         padding: 0;
     }
     .fotka {
+        margin-top: 30px;
         margin-left: 0;
         margin-bottom: 40px;
     }
@@ -1474,20 +1485,9 @@ li.bl:after {
     }
     .reviewtextcontainer p {
         width: 80%;
+        margin-top: 30px;
         text-align: center;
         padding-right: 0;
-    }
-    .maingreen {
-        font-size: 90px;
-    }
-    .mainwhite {
-        font-size: 90px;
-    }
-    .gfxcontain h3 {
-        font-size: 24px;
-    }
-    .gfxcontain p  {
-        font-size: 24px;
     }
     .about-skills {
         justify-content: flex-start;
@@ -1499,16 +1499,28 @@ li.bl:after {
     .workcontainer {
         flex-flow: column;
     }
+    .workbox1 {
+        width: 100%;
+    }
+    .workbox2 {
+        width: 100%;
+    }
+    .servicescontainer1 {
+        display: none;
+    }
+    .servicescontainer2 {
+        display: none;
+    }
     .apostrof {
         display: none;
     }
     .fotka {
-        width: 80%;
+        width: 320px;
         height: auto;
     }
     .contact-container {
         width: 80%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
     .first-row {
         width: 100%;
@@ -1571,10 +1583,97 @@ li.bl:after {
         margin-top: 20px;
     }
     .dogprojectboxes {
-        width: 85%;
+        width: 75%;
+        flex-flow: row;
+        flex-wrap: wrap;
     }
     .dogprojectboxes h3{
         font-size: 12px;
         margin-top: 20px;
+    }
+    .barberdog-h1 {
+        font-size: 72px;
+    }
+    .barberdogbox {
+        width: calc(100% - 15%);
+    }
+    .barberdog-container p {
+        width: 80%;
+    }
+    .palette {
+        margin-top: 100px;
+    }
+    .colors {
+        flex-flow: column;
+    }
+    .green {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .yellow {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .purple {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .column {
+        width: 100%;
+        flex-flow: row;
+    }
+    .ltblue {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+    }
+    .white {
+        width: 50%;
+        height: 120px;
+    }
+    .paw2 {
+        display: none;
+    }
+    .paw1 {
+        display: none;
+    }
+    .logo-typo {
+        flex-flow: column;
+    }
+    .typography {
+        width: 80%;
+    }
+    .typography p {
+        width: 100%;
+    }
+    .typography h3 {
+        font-size: 32px;
+    }
+    .logocont {
+        margin: 0;
+        width: 100%;
+    }
+    .logotext p {
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .contact_form h1 {
+        align-items: center;
+        font-size: 30px;
+        justify-content: center;
+        margin-block-start: 0em;
+        margin-block-end: 0.75em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .showcase {
+        width: 88%;
+        flex-flow: column;
     }
 }
