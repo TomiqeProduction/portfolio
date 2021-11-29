@@ -938,7 +938,7 @@ html::-webkit-scrollbar-track {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 420px;
+    min-width: 320px;
     height: 100%;
     margin-top: 250px;
     align-items: center;
@@ -1775,7 +1775,7 @@ li.php:after {
         height: auto;
     }
     .contact-container {
-        width: 80%;
+        width: 100%;
         margin: 50px auto;
     }
     .first-row {
@@ -1802,7 +1802,7 @@ li.php:after {
         display: none;
     }
     .input_message {
-        width: 78%;
+        width: 80%;
         margin: 0 auto;
     }
     .second-row {
@@ -2203,7 +2203,8 @@ li.php:after {
     }
     .contact-container {
         width: 80%;
-
+        margin-right: 0;
+        margin-left: 0;
     }
     .first-row {
         width: 100%;
@@ -2211,25 +2212,25 @@ li.php:after {
         flex-flow: column;
     }
     .input_fname {
-        width: 75%;
+        width: 80%;
     }
     .input_lname {
-        width: 75%;
+        width: 80%;
         margin-top: 10px;
     }
     .input_mail {
-        width: 75%;
+        width: 80%;
         margin-top: 10px;
     }
     .input_phone {
-        width: 75%;
+        width: 80%;
         margin: 10px 0;
     }
     .contact-image {
         display: none;
     }
     .input_message {
-        width: 75%;
+        width: 78.5%;
         margin: 0 auto;
     }
     .second-row {
