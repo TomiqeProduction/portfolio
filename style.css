@@ -2290,7 +2290,7 @@ li.php:after {
         margin-top: -120px;
     }
     .barberdog-h1 {
-        font-size: 72px;
+        font-size: 56px;
     }
     .barberdogbox {
         width: calc(100% - 15%);
@@ -2302,7 +2302,8 @@ li.php:after {
         width: 80%;
     }
     .palette {
-        margin-top: 100px;
+        margin-top: 350px;
+        flex-wrap: wrap;
     }
     .colors {
         flex-flow: column;
@@ -2360,6 +2361,7 @@ li.php:after {
         display: none;
     }
     .logo-typo {
+        margin-top: -50px;
         flex-flow: column;
     }
     .typography {
@@ -2403,5 +2405,41 @@ li.php:after {
     .showcase {
         width: 88%;
         flex-flow: column;
+        flex-wrap: wrap;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .sh1 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh2 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh3 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh4 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh5 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh6 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh7 {
+        width: 94%;
+        margin-top: 10px;
+    }
+    .sh8 {
+        width: 94%;
+        margin-top: 10px;
     }
 }
