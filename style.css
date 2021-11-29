@@ -1546,9 +1546,6 @@ li.php:after {
         width: 100%;
         position: inherit;
     }
-    .textcontainer {
-        position: inherit;
-    }
     .maingreen {
         top: 150px;
         font-size: 72px;
@@ -1558,13 +1555,12 @@ li.php:after {
         font-size: 72px;
     }
     .textcontainer {
-        height: 50%;
+        height: 430px;
     }
     .gfxcontain {
         margin-top: -70px;
     }
     .gfxcontain p {
-        
         font-size: 22px;
     }
     .autoinput {
@@ -1595,7 +1591,7 @@ li.php:after {
         margin-inline-end: 0px;
     }
     .reviewtextcontainer p {
-        width: 80%;
+        width: 70%;
         margin-top: 30px;
         text-align: center;
         padding-right: 0;
@@ -1612,9 +1608,15 @@ li.php:after {
         flex-flow: column;
     }
     .workbox1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
     .workbox2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
     }
     .servicescontainer1 {
@@ -1973,24 +1975,22 @@ li.php:after {
     }
     .maincontainer {
         width: 100%;
-        position: inherit;
-    }
-    .textcontainer {
+        height: 100%;
         position: inherit;
     }
     .maingreen {
-        top: 80px;
+        top: 0px;
         font-size: 56px;
     }
     .mainwhite {
-        top: 150px;
+        top: 80px;
         font-size: 56px;
     }
     .textcontainer {
-        height: 50%;
+        height: 170px;
     }
     .gfxcontain {
-        margin-top: -70px;
+        margin-top: 0px;
     }
     .gfxcontain p {
         font-size: 22px;
@@ -2016,13 +2016,14 @@ li.php:after {
         margin-bottom: 40px;
     }
     .reviewtextcontainer h2 {
+        font-size: 28px;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
     .reviewtextcontainer p {
-        width: 80%;
+        width: 100%;
         margin-top: 30px;
         text-align: center;
         padding-right: 0;
@@ -2034,15 +2035,22 @@ li.php:after {
     .skillcontainer {
         width: 100%;
     }
-
     .workcontainer {
+        margin-top: 20px;
         flex-flow: column;
+        width: 95%;
     }
     .workbox1 {
+        display: flex;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .workbox2 {
+        display: flex;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .servicescontainer1 {
         flex-wrap: wrap;
@@ -2247,6 +2255,9 @@ li.php:after {
     }
     .logocontainer {
         opacity: 0;
+    }
+    .btn1 {
+        width: 270px;
     }
     .circle {
         width: 110px;
