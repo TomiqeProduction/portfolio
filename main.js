@@ -29,3 +29,6 @@ $(document).ready(function() {
         }
     });
 });
+
+import Typed from 'typed.js';
+

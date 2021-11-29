@@ -258,7 +258,36 @@ html::-webkit-scrollbar-track {
     align-items: center;
     transition: 0.5s;
 }
-
+.logo-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.branding-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.webdesign-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.print-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.socialmedia-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.photo-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
 .navtext {
     display: flex;
     align-items: center;
@@ -384,7 +413,9 @@ html::-webkit-scrollbar-track {
     color: #2ecc71;
     box-shadow: 0 1px 35px 0 #2ecc7065 inset, 0 1px 20px 0 #2ecc70b9;
 }
-
+.autoinput {
+    color: #2ecc71;
+}
 
 .gfxcontain {
     display: flex;
@@ -392,6 +423,7 @@ html::-webkit-scrollbar-track {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 20px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight:lighter;
@@ -416,11 +448,10 @@ html::-webkit-scrollbar-track {
     margin-inline-start: 0px;
     margin-inline-end: 0.3em;
 }
-
 .workcontainer {
     display: flex;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 120px;
 }
@@ -436,6 +467,7 @@ html::-webkit-scrollbar-track {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    width: fit-content;
 }
 .workbox2 {
     width: 1000px;
@@ -450,6 +482,7 @@ html::-webkit-scrollbar-track {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    width: fit-content;
 }
 
 .circle {
@@ -1191,6 +1224,7 @@ li.php:after {
     font-weight: 700;
     margin-left: 9%;
     font-size: 90px;
+    line-height: 80px;
     color: #fff;
     margin-block-end: 0em;
     margin-block-start: 0em;
@@ -1214,6 +1248,7 @@ li.php:after {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 50px;
     height: 50px;
     margin-right: 20px;
     border-radius: 15px;
@@ -1248,6 +1283,10 @@ li.php:after {
     display: flex;
     flex-direction: row;
     margin: 0px auto;
+}
+
+.logo1 {
+    display: flex;
 }
 
 .green {
@@ -1308,12 +1347,48 @@ li.php:after {
     width: 35%;
     margin-top: 165px;  
 }
+.typography-penzion {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-top: 165px; 
+}
 .typography h3 {
     font-size: 26px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     color: #fff;
     margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.typography-penzion h3 {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.typography-penzion p {
+    display: flex;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    font-size: 16px;
+}
+.typography-penzion h4{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #e3ac52;
+    margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -1353,17 +1428,19 @@ li.php:after {
 .logotext p {
     display: flex;
     color: #fff;
-    margin-top: 120px;
+    margin-top: -170px;
     width: 60%;
     margin-left: 12%;
     font-family: 'Poppins', sans-serif;
     font-weight:lighter;
     font-size: 16px;
+    z-index: 2;
 }
 .paw1 {
     width: 70%;
     z-index: 1;
 }
+
 .paw2 {
     position: relative;
      top: -5px;
@@ -1426,6 +1503,30 @@ li.php:after {
     height: max-content;
 }
 
+/* Penzion Project CSS */
+
+.teal {
+    background-color: #f0c487;
+    height: 450px;
+    width: 40%;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.gold {
+    background-color: #e3ac52;
+    height: 450px;
+    width: 40%;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.dkblue {
+    background-color: #192544;
+    width: 80%;
+    height: 215px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
 @media (min-width:1200px) {
     .apostrof {
         display: flex;
@@ -1449,16 +1550,26 @@ li.php:after {
         position: inherit;
     }
     .maingreen {
+        top: 150px;
         font-size: 72px;
     }
     .mainwhite {
+        top: 260px;
         font-size: 72px;
     }
-    .gfxcontain h3 {
-        font-size: 18px;
+    .textcontainer {
+        height: 50%;
     }
-    .gfxcontain p  {
-        font-size: 18px;
+    .gfxcontain {
+        margin-top: -70px;
+    }
+    .gfxcontain p {
+        
+        font-size: 22px;
+    }
+    .autoinput {
+        
+        font-size: 22px;
     }
     .image {
         display: none;
@@ -1497,6 +1608,7 @@ li.php:after {
         width: 100%;
     }
     .workcontainer {
+        margin-top: -50px;
         flex-flow: column;
     }
     .workbox1 {
@@ -1506,10 +1618,154 @@ li.php:after {
         width: 100%;
     }
     .servicescontainer1 {
-        display: none;
+        flex-wrap: wrap;
     }
     .servicescontainer2 {
+        flex-wrap: wrap;
+    }
+    .branding { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .branding-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .branding-mobile img {
         display: none;
+    }
+    .branding-mobile p {
+        display: none;
+    }
+    .branding-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .webdesign { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .webdesign-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .webdesign-mobile img {
+        display: none;
+    }
+    .webdesign-mobile p {
+        display: none;
+    }
+    .webdesign-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .socialmedia { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .socialmedia-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .socialmedia-mobile img {
+        display: none;
+    }
+    .socialmedia-mobile p {
+        display: none;
+    }
+    .socialmedia-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .logodesign { 
+        height: 80px;
+        width: 100%;
+        margin-top:10px;
+    }
+    .logo-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .logo-mobile img {
+        display: none;
+    }
+    .logo-mobile p {
+        display: none;
+    }
+    .logo-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .print { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .print-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .print-mobile img {
+        display: none;
+    }
+    .print-mobile p {
+        display: none;
+    }
+    .print-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .photo { 
+        height: 80px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .photo-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .photo-mobile img {
+        display: none;
+    }
+    .photo-mobile p {
+        display: none;
+    }
+    .photo-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
     }
     .apostrof {
         display: none;
@@ -1591,11 +1847,17 @@ li.php:after {
         font-size: 12px;
         margin-top: 20px;
     }
+    .barberdog-container {
+        margin-top: -120px;
+    }
     .barberdog-h1 {
         font-size: 72px;
     }
     .barberdogbox {
         width: calc(100% - 15%);
+    }
+    .barberdogbox h3 {
+        margin-top: 30px;
     }
     .barberdog-container p {
         width: 80%;
@@ -1605,6 +1867,21 @@ li.php:after {
     }
     .colors {
         flex-flow: column;
+    }
+    .dkblue {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+    }
+    .gold {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .teal {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
     }
     .green {
         width: 100%;
@@ -1640,6 +1917,9 @@ li.php:after {
     .paw1 {
         display: none;
     }
+    .logo1 {
+        display: none;
+    }
     .logo-typo {
         flex-flow: column;
     }
@@ -1662,6 +1942,15 @@ li.php:after {
         margin-right: 0;
         margin-bottom: 0;
         width: 100%;
+    }
+    .typography-penzion {
+        width: 80%;
+    }
+    .typography-penzion p {
+        width: 100%;
+    }
+    .typography-penzion h3 {
+        font-size: 32px;
     }
     .contact_form h1 {
         align-items: center;
