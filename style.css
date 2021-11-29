@@ -1554,7 +1554,7 @@ li.php:after {
         font-size: 72px;
     }
     .mainwhite {
-        top: 260px;
+        top: 240px;
         font-size: 72px;
     }
     .textcontainer {
@@ -1967,7 +1967,7 @@ li.php:after {
     }
 }
 
-@media (max-width:560px) {
+@media (max-width:400px) {
     .overflow-dekstop-hidden {
         overflow:auto
     }
@@ -1979,25 +1979,23 @@ li.php:after {
         position: inherit;
     }
     .maingreen {
-        top: 120px;
-        font-size: 72px;
+        top: 80px;
+        font-size: 56px;
     }
     .mainwhite {
-        top: 200px;
-        font-size: 72px;
+        top: 150px;
+        font-size: 56px;
     }
     .textcontainer {
         height: 50%;
     }
     .gfxcontain {
-        margin-top: -10px;
+        margin-top: -70px;
     }
     .gfxcontain p {
-        
         font-size: 22px;
     }
     .autoinput {
-        
         font-size: 22px;
     }
     .image {
@@ -2213,25 +2211,25 @@ li.php:after {
         flex-flow: column;
     }
     .input_fname {
-        width: 80%;
+        width: 75%;
     }
     .input_lname {
-        width: 80%;
+        width: 75%;
         margin-top: 10px;
     }
     .input_mail {
-        width: 80%;
+        width: 75%;
         margin-top: 10px;
     }
     .input_phone {
-        width: 80%;
+        width: 75%;
         margin: 10px 0;
     }
     .contact-image {
         display: none;
     }
     .input_message {
-        width: 78%;
+        width: 75%;
         margin: 0 auto;
     }
     .second-row {
