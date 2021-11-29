@@ -1966,3 +1966,432 @@ li.php:after {
         flex-flow: column;
     }
 }
+
+@media (max-width:560px) {
+    .overflow-dekstop-hidden {
+        overflow:auto
+    }
+    .maincontainer {
+        width: 100%;
+        position: inherit;
+    }
+    .textcontainer {
+        position: inherit;
+    }
+    .maingreen {
+        top: 120px;
+        font-size: 72px;
+    }
+    .mainwhite {
+        top: 200px;
+        font-size: 72px;
+    }
+    .textcontainer {
+        height: 50%;
+    }
+    .gfxcontain {
+        margin-top: -10px;
+    }
+    .gfxcontain p {
+        
+        font-size: 22px;
+    }
+    .autoinput {
+        
+        font-size: 22px;
+    }
+    .image {
+        display: none;
+    }
+    .review {
+        margin: 20px auto;
+    }
+    .reviewtextcontainer {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .fotka {
+        margin-top: 30px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .reviewtextcontainer h2 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .reviewtextcontainer p {
+        width: 80%;
+        margin-top: 30px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .about-skills {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .skillcontainer {
+        width: 100%;
+    }
+
+    .workcontainer {
+        flex-flow: column;
+    }
+    .workbox1 {
+        width: 100%;
+    }
+    .workbox2 {
+        width: 100%;
+    }
+    .servicescontainer1 {
+        flex-wrap: wrap;
+    }
+    .servicescontainer2 {
+        flex-wrap: wrap;
+    }
+    .branding { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .branding-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .branding-mobile img {
+        display: none;
+    }
+    .branding-mobile p {
+        display: none;
+    }
+    .branding-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .webdesign { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .webdesign-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .webdesign-mobile img {
+        display: none;
+    }
+    .webdesign-mobile p {
+        display: none;
+    }
+    .webdesign-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .socialmedia { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .socialmedia-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .socialmedia-mobile img {
+        display: none;
+    }
+    .socialmedia-mobile p {
+        display: none;
+    }
+    .socialmedia-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .logodesign { 
+        height: 80px;
+        width: 100%;
+        margin-top:10px;
+    }
+    .logo-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .logo-mobile img {
+        display: none;
+    }
+    .logo-mobile p {
+        display: none;
+    }
+    .logo-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .print { 
+        height: 80px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .print-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .print-mobile img {
+        display: none;
+    }
+    .print-mobile p {
+        display: none;
+    }
+    .print-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .photo { 
+        height: 80px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .photo-mobile {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        height: 80px;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+    .photo-mobile img {
+        display: none;
+    }
+    .photo-mobile p {
+        display: none;
+    }
+    .photo-mobile h2 {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .apostrof {
+        display: none;
+    }
+    .fotka {
+        width: 320px;
+        height: auto;
+    }
+    .contact-container {
+        width: 80%;
+
+    }
+    .first-row {
+        width: 100%;
+        padding: 0;
+        flex-flow: column;
+    }
+    .input_fname {
+        width: 80%;
+    }
+    .input_lname {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .input_mail {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .input_phone {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .contact-image {
+        display: none;
+    }
+    .input_message {
+        width: 78%;
+        margin: 0 auto;
+    }
+    .second-row {
+        width: 100%;
+        padding: 0;
+        flex-flow: column;
+    }
+    .nav {
+        opacity: 0;
+        transform: translateY(-84px);
+    }
+    .wrapper {
+        opacity: 0;
+    }
+    .logocontainer {
+        opacity: 0;
+    }
+    .circle {
+        width: 110px;
+        height: 110px;
+        border-radius: 110px;
+    }
+    .menu {
+        display: block;
+    }
+    .sidepanel-overflow-hidden {
+        overflow: hidden !important
+    }
+    .penzionprojectboxes {
+        width: 85%;
+    }
+    .penzionprojectboxes h3{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .dogprojectboxes {
+        width: 75%;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .dogprojectboxes h3{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .barberdog-container {
+        margin-top: -120px;
+    }
+    .barberdog-h1 {
+        font-size: 72px;
+    }
+    .barberdogbox {
+        width: calc(100% - 15%);
+    }
+    .barberdogbox h3 {
+        margin-top: 30px;
+    }
+    .barberdog-container p {
+        width: 80%;
+    }
+    .palette {
+        margin-top: 100px;
+    }
+    .colors {
+        flex-flow: column;
+    }
+    .dkblue {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+    }
+    .gold {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .teal {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .green {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .yellow {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .purple {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .column {
+        width: 100%;
+        flex-flow: row;
+    }
+    .ltblue {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+    }
+    .white {
+        width: 50%;
+        height: 120px;
+    }
+    .paw2 {
+        display: none;
+    }
+    .paw1 {
+        display: none;
+    }
+    .logo1 {
+        display: none;
+    }
+    .logo-typo {
+        flex-flow: column;
+    }
+    .typography {
+        width: 80%;
+    }
+    .typography p {
+        width: 100%;
+    }
+    .typography h3 {
+        font-size: 32px;
+    }
+    .logocont {
+        margin: 0;
+        width: 100%;
+    }
+    .logotext p {
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .typography-penzion {
+        width: 80%;
+    }
+    .typography-penzion p {
+        width: 100%;
+    }
+    .typography-penzion h3 {
+        font-size: 32px;
+    }
+    .contact_form h1 {
+        align-items: center;
+        font-size: 30px;
+        justify-content: center;
+        margin-block-start: 0em;
+        margin-block-end: 0.75em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .showcase {
+        width: 88%;
+        flex-flow: column;
+    }
+}
