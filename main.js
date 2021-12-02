@@ -28,7 +28,51 @@ $(document).ready(function() {
             $('.sidepanel').removeClass('open');
         }
     });
+    $('.slick').slick({
+        autoplay:true,
+        autoplaySpeed:3000,
+        arrows: false,
+    });
+    $('.branding').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('branding--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".branding__text").toggleClass('branding__text--open');
+        }
+    });
+    $('.webdesign').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('webdesign--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".web__text").toggleClass('web__text--open');
+        }
+    });
+    $('.socialmedia').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('socialmedia--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".socials__text").toggleClass('socials__text--open');
+        }
+    });
+    $('.logodesign').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('logodesign--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".logo__text").toggleClass('logo__text--open');
+        }
+    });
+    $('.print').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('print--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".print__text").toggleClass('print__text--open');
+        }
+    });
+    $('.photo').on('click', function() {
+        if ($(window).width() < 1200) {
+            $(this).toggleClass('photo--open');
+            $(this).find(".arrow").toggleClass('arrow--open');
+            $(this).find(".photo__text").toggleClass('photo__text--open');
+        }
+    });
 });
-
-import Typed from 'typed.js';
-

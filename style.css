@@ -2,7 +2,6 @@ body {
     background-color: #090e22;
 }
 a   {
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: inherit;
     letter-spacing: 0.3px;
@@ -16,6 +15,7 @@ html, body, #root {
 }
 *, ::after, ::before {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 main {
     width: 100%;
@@ -58,16 +58,14 @@ img, svg {
 html::-webkit-scrollbar {
     width: 0.5vw;
 }
-
 html::-webkit-scrollbar-thumb {
     background-color:#2ecc70bb;
 }
-
 html::-webkit-scrollbar-thumb:hover {
     background-color:#2ecc71;
 }
 html::-webkit-scrollbar-track {
-    background-color:#111e3f ;
+    background-color:#111e3f;
 }
 /* Navbar CSS */
 
@@ -94,14 +92,12 @@ html::-webkit-scrollbar-track {
     height: 30px;
     z-index: 99;
 }
-
 .menu span {
     background: #fff;
     border-radius: 2px;
     display: block;
     transition: all .5s ease-in-out;
 }
-
 .menu__hamburger {
     left:4px;
     width: 100%;
@@ -116,7 +112,6 @@ html::-webkit-scrollbar-track {
     margin:6px 0;
     z-index: 99;
 }
-
 .menu__hamburger span:nth-child(1) {
     transition-delay: s;
     width: 24px;
@@ -143,59 +138,49 @@ html::-webkit-scrollbar-track {
     height: 0%;
     width: 2px;
 }
-
 .menu__cross span:nth-child(2) {
     height: 2px;
     width: 0%;
     position: absolute;
 }
-
 .menu.open .menu__hamburger span {
     width: 0%;
 }
-
 .menu.open .menu__hamburger span:nth-child(1) {
     transition-delay: 0s;
 }
-
 .menu.open .menu__hamburger span:nth-child(2) {
     transition-delay: .1s;
     transform: translateX(20px);
 }
-
 .menu.open .menu__hamburger span:nth-child(3) {
     transition-delay: 0s;
 }
-
 .menu.open .menu__cross {
     pointer-events: auto;
 }
-
 .menu.open .menu__cross span:nth-child(1) {
     height: 100%;
     transform: rotate(45deg) translate(10px, -10px);
 }
-
 .menu.open .menu__cross span:nth-child(2) {
     width: 100%;
     transform: rotate(45deg) translate(10px, 10px);
 }
-
 .sidepanel {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    background-color: #2ecc70ec;
+    background-color: #2ecc70;
     height: 100%;
     left: 0;
     overflow-x: hidden;
     position: fixed;
     top: 0;
-    transition: width .55s ease-out;
+    transition: width .3s ease-out;
     width: 0;
     z-index: 98;
     backdrop-filter: blur(15px);
 }
-
 .sidepanel.open {
     width: 100%;
     display: flex;
@@ -248,7 +233,6 @@ html::-webkit-scrollbar-track {
 .overflow-dekstop-hidden {
     overflow: hidden
 }
-
 .logocontainer {
     background-color: #2ecc71;
     width: 10%;
@@ -257,36 +241,6 @@ html::-webkit-scrollbar-track {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-}
-.logo-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-}
-.branding-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-}
-.webdesign-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-}
-.print-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-}
-.socialmedia-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-}
-.photo-mobile {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
 }
 .navtext {
     display: flex;
@@ -749,7 +703,6 @@ html::-webkit-scrollbar-track {
     display: flex;
     margin-top: 13%;
 }
-
 .servicescontainer1 {
     display: flex;
     flex-flow: row;
@@ -766,6 +719,8 @@ html::-webkit-scrollbar-track {
         font-weight: 700;
         color: #21366c;
         margin-top: 20%;
+        margin-right: 0px;
+        align-content: center;
 }
 
 .servicescontainer1 p {
@@ -775,6 +730,15 @@ html::-webkit-scrollbar-track {
     color: #fff;
     width: 70%;
     align-content: center;
+}
+.row1 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow {
+    display: none;
 }
 
 .branding {
@@ -788,9 +752,7 @@ html::-webkit-scrollbar-track {
     margin-top: 4%;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s linear;
 }
-
 .webdesign {
     display: flex;
     text-align: center;
@@ -802,7 +764,6 @@ html::-webkit-scrollbar-track {
     margin-top: -1%;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s linear;
 }
 
 .socialmedia {
@@ -816,9 +777,7 @@ html::-webkit-scrollbar-track {
     margin-top: 10%;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s linear;
 }
-
 
 .servicescontainer2 {
     display: flex;
@@ -857,7 +816,6 @@ html::-webkit-scrollbar-track {
     margin-top: -2.7%;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s linear;
 }
 
 .print {
@@ -870,7 +828,6 @@ html::-webkit-scrollbar-track {
     margin-top: -7.5%;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.5s linear;
 }
 
 .photo {
@@ -883,7 +840,6 @@ html::-webkit-scrollbar-track {
     margin-top: 3.7%;
     align-items: center;
     justify-content: center;
-    transition: .5s linear;
 }
 
 .review {
@@ -922,9 +878,8 @@ html::-webkit-scrollbar-track {
 }
 
 .apostrof {
-    display: none;
     margin-left: 5%;
-    z-index: 5;
+    z-index: 7;
     padding-bottom: 300px;
 }
 
@@ -938,7 +893,7 @@ html::-webkit-scrollbar-track {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     height: 100%;
     margin-top: 250px;
     align-items: center;
@@ -967,7 +922,6 @@ form {
     margin-top: -1%;
     width: 100%;
 }
-
 .contact_form h1 {
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -975,14 +929,13 @@ form {
     font-weight: 700;
     color: #fff;
 }
-
 .first-row {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 .input_fname {
@@ -1018,7 +971,7 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .input_mail {
@@ -1064,21 +1017,24 @@ form {
     transition: .5s ease;
 }
 
-.submit {
+form .submit {
+    display: flex;
     background-image: linear-gradient(to right, #8b66fd, #5287ff, #00b3ff, #32c3fa);
-    border-radius: 20px;
+    border-radius: 25px;
     color:#0f1a36;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin-top: 8px;
-    padding: 15px 45px;
+    margin: 20px auto;
+    padding: 15px 35px;
     border:none;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     transition:all .4s ease;
 }
 
-.submit:hover {
+form .submit:hover {
     box-shadow: 0 1px 25px 0 #ab79f698 inset, 0 1px 25px 0 #ab79f6a8;
     color: rgb(194, 233, 245);
 }
@@ -1141,7 +1097,7 @@ li.php:after {
 
 @keyframes ps {
     to {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -1152,17 +1108,17 @@ li.php:after {
 }
 @keyframes html {
     to {
-        width: 80%;
+        width: 90%;
     }
 }
 @keyframes css {
     to {
-        width: 75%;
+        width: 85%;
     }
 }
 @keyframes bs {
     to {
-        width: 70%;
+        width: 85%;
     }
 }
 @keyframes php {
@@ -1622,151 +1578,227 @@ li.php:after {
     .servicescontainer1 {
         flex-wrap: wrap;
     }
+    .servicescontainer1 p {
+        text-align: left;
+        width: 60%;
+    }
     .servicescontainer2 {
         flex-wrap: wrap;
     }
-    .branding { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
+    .servicescontainer2 p {
+        text-align: left;
+        width: 60%;
     }
-    .branding-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+    .branding { 
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .branding-mobile img {
+    .branding--open {
+        height: 240px;
+    }
+    .arrow {
+        display: flex;
+        align-items: center;
+        width: 15px;
+        margin-right: 25px;
+        height: fit-content;
+        transition: transform .3s ease;
+    }
+    .arrow--open {
+        transform: rotate(180deg);
+    }
+    .brand {
         display: none;
     }
-    .branding-mobile p {
-        display: none;
+    .branding__text {
+        opacity: 0;
+        margin-left: 25px;
+        transition: .4s ease;
     }
-    .branding-mobile h2 {
+    .branding__text--open {
+        opacity: 1;
+        display: block;
+        margin-left: 25px;
+    }
+    .branding h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
-    .webdesign { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
+    .web {
+        display: none;
     }
-    .webdesign-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+    .webdesign { 
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .webdesign-mobile img {
+    .webdesign--open {
+        max-height: 450px;
+        height: 220px;
+    }
+    .web__text {
         display: none;
-    }
-    .webdesign-mobile p {
-        display: none;
-    }
-    .webdesign-mobile h2 {
         text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
+    }
+    .web__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .webdesign h2 {
+        text-align: left;
+        margin-left: 25px;
         margin-top: 25px;
         font-size: 24px;
     }
     .socialmedia { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .socialmedia-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .socialmedia-mobile img {
+    .socialmedia--open {
+        max-height: 450px;
+        height: 230px;
+    }
+    .smedia {
         display: none;
     }
-    .socialmedia-mobile p {
+    .socials__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .socialmedia-mobile h2 {
+    .socials__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .socialmedia h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .logodesign { 
-        height: 80px;
-        width: 100%;
-        margin-top:10px;
-    }
-    .logo-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .logo-mobile img {
+    .logodesign--open {
+        max-height: 450px;
+        height: 210px;
+    }
+    .logod {
         display: none;
     }
-    .logo-mobile p {
+    .logo__text {
         display: none;
-    }
-    .logo-mobile h2 {
         text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
+    }
+    .logo__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .logodesign h2 {
+        text-align: left;
+        margin-left: 25px;
         margin-top: 25px;
         font-size: 24px;
     }
     .print { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .print-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .print-mobile img {
+    .print--open {
+        max-height: 450px;
+        height: 280px;
+    }
+    .printd {
         display: none;
     }
-    .print-mobile p {
+    .print__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .print-mobile h2 {
+    .print__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .print h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .photo { 
-        height: 80px;
-        margin-top: 10px;
-        width: 100%;
-    }
-    .photo-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .photo-mobile img {
+    .photo--open {
+        max-height: 450px;
+        height: 320px;
+    }
+    .photod {
         display: none;
     }
-    .photo-mobile p {
+    .photo__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .photo-mobile h2 {
+    .photo__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .photo h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .apostrof {
@@ -1969,7 +2001,7 @@ li.php:after {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     .overflow-dekstop-hidden {
         overflow:auto
     }
@@ -2055,151 +2087,227 @@ li.php:after {
     .servicescontainer1 {
         flex-wrap: wrap;
     }
+    .servicescontainer1 p {
+        text-align: left;
+        width: 80%;
+    }
     .servicescontainer2 {
         flex-wrap: wrap;
     }
-    .branding { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
+    .servicescontainer2 p {
+        text-align: left;
+        width: 80%;
     }
-    .branding-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+    .branding { 
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .branding-mobile img {
+    .branding--open {
+        height: 240px;
+    }
+    .arrow {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        width: 15px;
+        height: fit-content;
+        transition: transform .3s ease;
+    }
+    .arrow--open {
+        transform: rotate(180deg);
+    }
+    .brand {
         display: none;
     }
-    .branding-mobile p {
-        display: none;
+    .branding__text {
+        opacity: 0;
+        margin-left: 25px;
+        transition: .4s ease;
     }
-    .branding-mobile h2 {
+    .branding__text--open {
+        opacity: 1;
+        display: block;
+        margin-left: 25px;
+    }
+    .branding h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
-    .webdesign { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
+    .web {
+        display: none;
     }
-    .webdesign-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+    .webdesign { 
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .webdesign-mobile img {
+    .webdesign--open {
+        max-height: 450px;
+        height: 220px;
+    }
+    .web__text {
         display: none;
-    }
-    .webdesign-mobile p {
-        display: none;
-    }
-    .webdesign-mobile h2 {
         text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
+    }
+    .web__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .webdesign h2 {
+        text-align: left;
+        margin-left: 25px;
         margin-top: 25px;
         font-size: 24px;
     }
     .socialmedia { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .socialmedia-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .socialmedia-mobile img {
+    .socialmedia--open {
+        max-height: 450px;
+        height: 230px;
+    }
+    .smedia {
         display: none;
     }
-    .socialmedia-mobile p {
+    .socials__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .socialmedia-mobile h2 {
+    .socials__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .socialmedia h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .logodesign { 
-        height: 80px;
-        width: 100%;
-        margin-top:10px;
-    }
-    .logo-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .logo-mobile img {
+    .logodesign--open {
+        max-height: 450px;
+        height: 210px;
+    }
+    .logod {
         display: none;
     }
-    .logo-mobile p {
+    .logo__text {
         display: none;
-    }
-    .logo-mobile h2 {
         text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
+    }
+    .logo__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .logodesign h2 {
+        text-align: left;
+        margin-left: 25px;
         margin-top: 25px;
         font-size: 24px;
     }
     .print { 
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .print-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .print-mobile img {
+    .print--open {
+        max-height: 450px;
+        height: 280px;
+    }
+    .printd {
         display: none;
     }
-    .print-mobile p {
+    .print__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .print-mobile h2 {
+    .print__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .print h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .photo { 
-        height: 80px;
-        margin-top: 10px;
-        width: 100%;
-    }
-    .photo-mobile {
-        display: flex;
-        width: 100%;
-        flex-flow: row;
+        display: block;
         height: 80px;
         justify-content: space-between;
-        padding-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: height .3s ease;
     }
-    .photo-mobile img {
+    .photo--open {
+        max-height: 450px;
+        height: 320px;
+    }
+    .photod {
         display: none;
     }
-    .photo-mobile p {
+    .photo__text {
         display: none;
+        text-align: left;
+        margin-left: 25px;
+        transition: .2s ease;
     }
-    .photo-mobile h2 {
+    .photo__text--open {
+        display: block;
+        text-align: left;
+        margin-left: 25px;
+        color:#2e3a64;
+    }
+    .photo h2 {
         text-align: left;
         margin-top: 25px;
+        margin-left: 25px;
         font-size: 24px;
     }
     .apostrof {
