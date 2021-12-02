@@ -988,7 +988,7 @@ form {
     color:#aab8d4;
 }
 
-.input_phone {
+.input_subject {
     width: 28%;
     height: 55px;
     border-radius: 20px;
@@ -1828,7 +1828,7 @@ li.php:after {
         width: 80%;
         margin-top: 10px;
     }
-    .input_phone {
+    .input_subject {
         width: 80%;
         margin: 10px 0;
     }
@@ -2338,7 +2338,7 @@ li.php:after {
         width: 80%;
         margin-top: 10px;
     }
-    .input_phone {
+    .input_subject {
         width: 80%;
         margin: 10px 0;
     }

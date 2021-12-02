@@ -359,16 +359,16 @@
             <img src="./images/contact-image.png" class="contact-image" class="img-fluid">
             <div class="contact_form">
                 <h1>Hire me</h1>
-                <form action="mail.php" method="POST">
+                <form class="form" action="mail.php" method="POST">
                     <div class="first-row">
-                        <input type="text" name="fname" placeholder="First Name" class="input_fname" required>
+                        <input type="text" name="fname" placeholder="First Name" class="input_fname">
                         <input type="text" name="lname" placeholder="Last Name" class="input_lname">
                     </div>
                     <div class="second-row">
-                        <input type="email" name="mail" placeholder="E-mail" class="input_mail" required>
-                        <input type="tel" name="tel" placeholder="Phone Number" class="input_phone" required>    
+                        <input type="email" name="email" placeholder="E-mail" class="input_mail">
+                        <input type="text" name="subject" placeholder="Subject" class="input_subject">    
                     </div>
-                        <textarea name="message" placeholder="Message here" class="input_message" spellcheck="true" required></textarea>
+                        <textarea name="message" placeholder="Message here" class="input_message" spellcheck="true"></textarea>
                         <input type="submit" class="submit" value="Send message">
                 </form>
             </div>
@@ -380,7 +380,8 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="main.js"></script>
 
 

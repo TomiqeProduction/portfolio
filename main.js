@@ -75,4 +75,44 @@ $(document).ready(function() {
             $(this).find(".photo__text").toggleClass('photo__text--open');
         }
     });
+    $('.form').validate({
+        rules: {
+            fname: "required",  
+            lname: "optional",      
+            email: {
+                required: true,
+                email: true
+            },
+            subject: "required",
+            message: "required",
+        },
+        errorElement: "span" ,                            
+        messages: {
+            fullname: "Please enter your first name",
+            email: "Please enter valid email address",
+            subject: "Please enter subject of your message",
+            message: "Please write the message"
+        },
+        submitHandler: function(form) {
+            var dataparam = $('.form').serialize();
+
+            $.ajax({
+                type: 'POST',
+                async: true,
+                url: 'mail.php',
+                data: dataparam,
+                datatype: 'json',
+                cache: true,
+                global: false,
+                success: function(data) {
+                    if(data == 'Success'){
+                        console.log(data);
+                    } else {
+                        $('.no-config').show();
+                        console.log(data);
+                    }
+                },
+            });
+        }                
+    });
 });
