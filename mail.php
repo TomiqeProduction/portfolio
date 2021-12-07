@@ -1,43 +1,47 @@
 <?php
 
-require 'mailer/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-$mail = new PHPMailer;
+require '/PHPMailer/src/Exception.php';
+require '/PHPMailer/src/PHPMailer.php';
+require '/PHPMailer/src/SMTP.php';
+
+$mail = new PHPMailer(true);
 
 // Form Data
-$fname = $_REQUEST['fname'] ;
-$email = $_REQUEST['email'] ;
-$lname = $_REQUEST['lname'];
-$subject = $_REQUEST['subject'] ;
-$message = $_REQUEST['message'] ;
+$fullname = $_POST['fullname'] ;
+$email = $_POST['email'] ;
+$mobile = $_POST['mobile'];
+$category = $_POST['category'] ;
+$message = $_POST['message'] ;
 
 $mailbody = 'New Lead Enquiry' . PHP_EOL . PHP_EOL .
-            'Name: ' . $fname,$lname . '' . PHP_EOL .
-            'From: ' . $email . '' . PHP_EOL .
-            'Subject:' . $subject . '' . PHP_EOL .
+            'Name: ' . $fullname . '' . PHP_EOL .
+            'Mobile:' . $mobile . '' . PHP_EOL .
+            'Interested In: ' . $category . '' . PHP_EOL .
             'Message: ' . $message . '' . PHP_EOL;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'tomas.machacek98@gmail.com'; // SMTP username
-$mail->Password = 'Tomqarikandjoaca1'; // SMTP password
-$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587; // TCP port to connect to
+$mail->Username = 'terunertera@gmail.com'; // SMTP username
+$mail->Password = 't123456789*'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mail->Port       = 465;
 
-$mail->setFrom('admin@domain.com', 'WebMaster'); // Admin ID
-$mail->addAddress('owner@domain.com', 'Business Owner'); // Business Owner ID
-$mail->addReplyTo($email, $fname, $lname); // Form Submitter's ID
+$mail->setFrom('terunertera@gmail.com', 'WebMaster'); // Admin ID
+$mail->addAddress('tomas.machacek98@gmail.com', 'Business Owner'); // Business Owner ID
 
 $mail->isHTML(false); // Set email format to HTML
 
 $mail->Subject = 'New Lead Enquiry';
-$mail->Body = $mailbody;
+$mail->Body    = $mailbody;
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Success';
+    echo 'Message has been sent';
 }
-?>

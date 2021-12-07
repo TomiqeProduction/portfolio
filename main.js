@@ -75,44 +75,36 @@ $(document).ready(function() {
             $(this).find(".photo__text").toggleClass('photo__text--open');
         }
     });
-    $('.form').validate({
-        rules: {
-            fname: "required",  
-            lname: "optional",      
-            email: {
-                required: true,
-                email: true
-            },
-            subject: "required",
-            message: "required",
-        },
-        errorElement: "span" ,                            
-        messages: {
-            fullname: "Please enter your first name",
-            email: "Please enter valid email address",
-            subject: "Please enter subject of your message",
-            message: "Please write the message"
-        },
-        submitHandler: function(form) {
-            var dataparam = $('.form').serialize();
+
+    $('submit').click(function(event) {
+        event.preventDefault();
 
             $.ajax({
                 type: 'POST',
                 async: true,
                 url: 'mail.php',
-                data: dataparam,
-                datatype: 'json',
+                data: $(".form").serialize(),
                 cache: true,
                 global: false,
-                success: function(data) {
-                    if(data == 'Success'){
-                        console.log(data);
-                    } else {
-                        $('.no-config').show();
-                        console.log(data);
+                    beforeSend: function(xhr) {
+                        $('.submit').html('Sending...');
+                    },
+                    success: function(response) {
+                        if(response){
+                            $(".msg").html('<div class="alert alert-success">'+ response +'</div>');
+                        }
+                        else{
+                            $(".msg").html('<div class="alert alert-warning">'+ response +'</div>');
+                        }
+                    },
+                    error: function(){
+                            $(".msg").html('<div class="alert alert-warning">Error occured. Please try again later.</div>');
+                    },
+                    complete:function(){
+                        $('.submit').html('Send message')
                     }
-                },
+                });
             });
-        }                
-    });
-});
+        });
+
+ 
