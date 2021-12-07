@@ -11,16 +11,15 @@ require '/PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 // Form Data
-$fullname = $_POST['fullname'] ;
-$email = $_POST['email'] ;
-$mobile = $_POST['mobile'];
-$category = $_POST['category'] ;
-$message = $_POST['message'] ;
+$firstname = $_POST['fname'];
+$email = $_POST['email'];
+$lastname = $_POST['lname'];
+$subject = $_POST['subject'];
+$fullname = $firstname.$lastname;
+$message = $_POST['message'];
 
-$mailbody = 'New Lead Enquiry' . PHP_EOL . PHP_EOL .
-            'Name: ' . $fullname . '' . PHP_EOL .
-            'Mobile:' . $mobile . '' . PHP_EOL .
-            'Interested In: ' . $category . '' . PHP_EOL .
+$mailbody = 'New Form Submission' . PHP_EOL . PHP_EOL .
+            'Name: ' . $fname $lname . '' . PHP_EOL .
             'Message: ' . $message . '' . PHP_EOL;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -31,12 +30,12 @@ $mail->Password = 't123456789*'; // SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port       = 465;
 
-$mail->setFrom('terunertera@gmail.com', 'WebMaster'); // Admin ID
+$mail->setFrom($email, $fullname); // Admin ID
 $mail->addAddress('tomas.machacek98@gmail.com', 'Business Owner'); // Business Owner ID
 
 $mail->isHTML(false); // Set email format to HTML
 
-$mail->Subject = 'New Lead Enquiry';
+$mail->Subject = 'New Form Submission';
 $mail->Body    = $mailbody;
 
 if(!$mail->send()) {
@@ -45,3 +44,5 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
+
+?>
